@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/pages/jugger.js"],"names":["Jugger"],"mappings":"2FAAA,wEAEe,SAASA,IACpB,OAAQ","file":"component---src-pages-jugger-js-d03346bf33f0403446e2.js","sourcesContent":["import React from \"react\";\n\nexport default function Jugger() {\n    return (<>What's jugger?</>);\n}\n"],"sourceRoot":""}

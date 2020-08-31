@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{mdQR:function(n,t,e){"use strict";e.r(t),e.d(t,"default",(function(){return a}));var r=e("q1tI"),u=e.n(r);function a(){return u.a.createElement(u.a.Fragment,null,"What's jugger?")}}}]);
+//# sourceMappingURL=component---src-pages-jugger-js-d03346bf33f0403446e2.js.map
