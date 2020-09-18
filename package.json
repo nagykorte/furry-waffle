@@ -16,10 +16,16 @@
   "dependencies": {
     "contentful": "^7.14.6",
     "gatsby": "^2.24.50",
+    "gatsby-plugin-typography": "^2.5.10",
     "http-server": "^0.12.3",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "surge": "^0.21.6"
+    "react-helmet": "^6.1.0",
+    "react-transition-group": "^4.4.1",
+    "react-typography": "^0.16.19",
+    "surge": "^0.21.6",
+    "typography": "^0.16.19",
+    "typography-theme-fairy-gates": "^0.16.19"
   },
   "devDependencies": {
     "prettier": "2.1.0"

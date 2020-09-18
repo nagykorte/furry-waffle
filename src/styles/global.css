@@ -1,0 +1,13 @@
+html {
+    background: rgb(25, 25, 25);
+    background: radial-gradient(
+        circle,
+        rgba(25, 25, 25, 1) 0%,
+        rgba(43, 43, 43, 1) 92%,
+        rgba(47, 47, 47, 1) 100%
+    );
+    z-index: -100;
+}
+a {
+  display: inline;
+}

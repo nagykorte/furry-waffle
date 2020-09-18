@@ -18,8 +18,8 @@ export default function Me() {
     return (
         <>
             <Container>
+                <SubButton buttonText="Me" url="/me/"/>
                 <SubButton buttonText="index" url="/" />
-                <SubButton buttonText="Project" url="/projects/" />
                 <SubButton buttonText="Resume" />
                 <SubButton buttonText="Other" />
                 <User
