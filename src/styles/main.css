@@ -1,0 +1,36 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Ubuntu", sans-serif;
+}
+body {
+  z-index: -1;
+  background: #000;
+  background-image: -webkit-gradient(linear, 0% 90%, 0% 100%, from(rgba(0, 0, 255, 0)), to(black));
+  color: rgba(0, 0, 255, 0.7);
+  text-shadow: #183bffcc 0 0 5px;
+  position: relative;
+}
+
+a {
+  display: flex;
+  width: -moz-fit-content;
+  height: -moz-fit-content;
+  color: #00c;
+}
+a :hover {
+  color: #3030ff;
+}
+
+p {
+  font-size: 2rem;
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-around;
+  background: black;
+  font-size: 2em;
+}
+
+/*# sourceMappingURL=main.css.map */

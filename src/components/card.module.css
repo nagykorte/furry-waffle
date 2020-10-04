@@ -1,0 +1,128 @@
+.container {
+  background-color: #000030;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: auto;
+  border-radius: 10px;
+  width: 70%;
+  margin-top: 5vh;
+}
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    width: 60%;
+    margin-top: 5vh;
+    padding: 10px 20px;
+    height: fit-content;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    padding: 0;
+    align-items: flex-end;
+  }
+}
+
+/* code font FX */ 
+.typewriter {
+  padding-left: 5vw;
+  margin-left: 0px;
+  padding-right: 20px;
+  align-self: center;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .typewriter {
+    padding-left: 2vw;
+    align-self: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+.typewriter h1 {
+  display: flex;
+  overflow: hidden;
+  font-size: 0.7rem;
+  font-family: "Ubuntu", sans-serif;
+  color: #00f;
+  width: fit-content;
+  white-space: nowrap;
+  letter-spacing: 0.15em;
+  animation: typing 2.5s steps(30, end);
+}
+@media (min-width: 768px) {
+  .typewriter h1 {
+    font-size: 0.65rem;
+  }
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from {
+    border-color: transparent;
+  }
+  50% {
+    border-color: darkgreen;
+  }
+  to {
+    border-color: transparent;
+  }
+}
+.img {
+  align-self: center;
+  width: 70%;
+}
+@media (min-width: 768px) {
+  .img {
+    width: 30%;
+  }
+}
+
+img {
+  border-radius: 50%;
+  margin: 20px 0;
+}
+.listGroup {
+  background: black;
+}
+
+.iconContainer {
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 80%;
+  align-self: center;
+  margin: 30px 0;
+}
+@media (min-width: 768px) {
+  .iconContainer {
+    flex-direction: column;
+    width: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 200px;
+  }
+}
+.iconContainer a {
+  background-image: none;
+}
+
+p {
+  float: right;
+}
+
+/*# sourceMappingURL=card.module.css.map */

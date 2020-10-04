@@ -1,4 +1,11 @@
 .container {
-  margin: 3rem auto;
-  width: 80%;
+  margin: "3rem auto";
+  maxWidth: 70%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: fit-content;
 }
+
+/*# sourceMappingURL=container.module.css.map */

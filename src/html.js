@@ -11,12 +11,18 @@ export default function HTML(props) {
                     name="viewport"
                     content="width=device-width, initial-scale=1, shrink-to-fit=no"
                 />
-
-                <script src="/index-module.js" />
+                <link //bootstrap
+                    rel="stylesheet"
+                    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+                    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+                    crossOrigin="anonymous"
+                />
+                <link rel="stylesheet" href="../styles/main.css" /* sass *//>
+                <script src="/main-module.js" />
 
                 {props.headComponents}
             </head>
-            <body {...props.bodyAttributes}>
+            <body {...props.bodyAttributes} >
                 {props.preBodyComponents}
                 <div key={`body`} id="___gatsby" dangerouslySetInnerHTML={{ __html: props.body }} />
                 {props.postBodyComponents}

@@ -1,0 +1,110 @@
+// vars
+$font-console: 0.7rem
+$darker-blue: rgba(20, 30, 43, 1)
+
+// main code
+
+.container
+    background-color: #000030
+    display: flex
+    flex-direction: column
+    justify-content: space-evenly
+    margin: auto
+    // padding: 30px 0px
+    border-radius: 10px
+    width: 70%
+    margin-top: 5vh
+    @media ( min-width: "768px"  )
+        flex-direction: row
+        width: 60%
+        margin-top: 5vh
+        padding: 10px 20px
+        height: fit-content
+    @media ( min-width: "1024px"  )
+        // width: 50%
+        padding: 0
+        align-items: flex-end
+
+/* code font FX */ 
+.typewriter
+    padding-left: 5vw
+    margin-left: 0px // Gives that scrolling effect as the typing happens
+    padding-right: 20px
+    align-self: center
+    padding-bottom: 20px
+    display: flex
+    flex-direction: column
+    @media ( min-width: "768px"  )
+        padding-left: 2vw  
+        align-self: center
+        margin-bottom: 0
+        padding-bottom: 0
+    h1
+        display: flex
+        overflow: hidden // Ensures the content is not revealed until the animation
+        font-size: $font-console
+        font-family: 'Ubuntu', sans-serif
+        color: #00f  //blue
+        width: fit-content
+        //border-right: .15em solid darkgreen // The typwriter cursor
+        white-space: nowrap // Keeps the content on a single line
+        letter-spacing: .15em // Adjust as needed
+        animation: typing 2.5s steps(30, end), //blink-caret .75s step-end infinite
+        @media ( min-width: "768px"  )
+            font-size: 0.65rem
+        
+
+/* The typing effect */
+@keyframes typing
+    from
+        width: 0
+    //70%
+    //    width: 80%
+    to
+        width: 100%
+/* The typewriter cursor effect */
+@keyframes blink-caret
+    from
+        border-color: transparent
+    50%
+        border-color: darkgreen
+    to
+        border-color: transparent
+.img
+    align-self: center
+    width: 70%
+
+    @media ( min-width: "768px"  )
+        width: 30%
+
+img
+    border-radius: 50%
+    margin: 20px 0
+    @media ( min-width: "1024px"  )
+        // margin: 0
+
+.listGroup
+    background: black
+
+.iconContainer
+    color: white
+    //background: $darker-blue
+    font-size: 2rem
+    display: flex
+    flex-direction: row
+    justify-content: space-evenly
+    width: 80%
+    align-self: center
+    margin: 30px 0
+    @media ( min-width: "768px"  )
+        flex-direction: column
+        width: auto
+        // font-size: 1.8rem
+        // height: 95%
+        margin-top: 0
+        margin-bottom: 0
+        height: 200px
+    a
+        background-image: none
+p
+    float: right

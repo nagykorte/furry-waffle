@@ -1,6 +1,6 @@
 import React from "react";
 import SubButton from "../components/SubButton";
-import styles from "./me-css-modules.module.css";
+import styles from "../styles/me.css";
 import Container from "../components/Container";
 console.log(styles);
 const User = (props) => (
