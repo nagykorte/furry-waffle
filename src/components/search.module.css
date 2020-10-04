@@ -44,9 +44,10 @@
 }
 .closeIcon {
   color: #303088;
-  display: flex;
-  align-self: flex-end;
   z-index: 3;
+  position: relative;
+  top: 27vh;
+  left: 0;
 }
 
 /*# sourceMappingURL=search.module.css.map */
