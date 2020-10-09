@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   background-color: #05004654;
   justify-content: space-between;
 }
@@ -46,8 +46,15 @@
   color: #303088;
   z-index: 3;
   position: relative;
-  top: 27vh;
+  top: 0vh;
   left: 0;
+  margin-right: 10px;
+  transition: position 1s;
+}
+
+.list {
+  flex-direction: column;
+  list-style: none;
 }
 
 /*# sourceMappingURL=search.module.css.map */

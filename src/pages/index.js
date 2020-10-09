@@ -2,8 +2,10 @@ import React from "react";
 import MainButton from "../components/MainButton";
 import Card from "../components/Card";
 import Container from "../components/Container";
+import BoxContainer from "../components/BoxContainer";
 import Calculator from "../components/Calculator";
 import SearchBar from "../components/SearchBar";
+import MainBox from "../components/MainBox";
 import Helmet from "react-helmet";
 import { withPrefix, Link } from "gatsby";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -25,40 +27,24 @@ export default class Home extends React.Component {
     render() {
 
         return (
-            <div style={{display:"flex",flexDirection:"column"}}>
+            <React.Fragment>
+
                 <SearchBar />
-                {/*<Calculator />*/}
-                <Container
-                    style={{
-                        display: "grid",
-                        gridTemplateColumns: "repeat(2,1fr)",
-                    }}
-                >
+                <div className="parallax">
+                    {/*<Calculator />*/}
+                </div>
+                <Container>
                     <Card onClick={this.startup} imgLink={"./profile.jpg"} name={"Nicolás Atila Mátray"} />
-                    
-                {/*}  you can edit the buttons here
-                <MainButton color="#660066" buttonText="Me" url="/me/" />
-                <MainButton color="#000066" buttonText="Projects" url="/projects/" />
-                <MainButton color="#666666" buttonText="Resume" url="/resume/" />
-                <MainButton color="#00751c" buttonText="Other" url="/other/" />
-                
-                but why would you?
-            */}
                 </Container>
-                <p>  </p>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
+                <BoxContainer>
+                    <MainBox />
+                    <MainBox />
+                    <MainBox />
+                    <MainBox />
+                    <MainBox />
+                    <MainBox />
+                </BoxContainer>
+            </React.Fragment>
         );
     }
 }

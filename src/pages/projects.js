@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "../components/Card";
 import SearchBar from "../components/SearchBar";
-import projectStyles from "../components/projects.module.css";
+import projectStyles from "../styles/projects.module.css";
 
 export default class Projects extends React.Component {
     constructor() {

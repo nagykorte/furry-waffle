@@ -1,6 +1,6 @@
 // imports
 import React from "react";
-import cardStyles from "./card.module.css"
+import cardStyles from "../styles/card.module.css"
 import CardR from 'react-bootstrap/Card';
 import { ListGroup, ListGroupItem } from "react-bootstrap"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -29,8 +29,9 @@ export default class Card extends React.Component {
                     <h1 ><strong>name</strong>: {this.props.name}</h1>
                     <h1 ><strong>birth</strong>: 02.02.91 - Argentina</h1>
                         <h1 ><strong>phone</strong>: (+54) 2257 544282</h1>
-                        <h1 ><strong>deity</strong>: none</h1>
-                            <h1 ><strong>likes</strong>: pancakes, reading</h1>
+                        <h1 ><strong>likes</strong>: pancakes, reading</h1>
+                        <h1 ><strong>stacks</strong>: node.js, python</h1>
+
                     </div>
                     {/* media! */}
                     <div className={cardStyles.iconContainer}>
